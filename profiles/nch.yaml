@@ -1,0 +1,44 @@
+id: nch
+name: "Челябинск — общий дайджест"
+telegram_token_env: TG_BOT_TOKEN_NCH
+gemini_api_key_env: GEMINI_API_KEY_NCH
+db_path: news_db.sqlite
+schedule_minutes: 48
+digest_header: "🏙 ЧЕЛЯБИНСКИЙ ДАЙДЖЕСТ"
+similarity_threshold: 0.83
+cluster_threshold: 0.75
+min_text_length: 60
+posts_per_source: 7
+max_gemini_items: 30
+system_prompt_file: nch_system.txt
+user_prompt_file: nch_user.txt
+sources:
+  tg_channels:
+    - chelyabinsk_smi
+    - gumvd74
+    - cheliabinsktop
+    - odinobl
+    - newschelyaba
+    - news_74ru
+    - gaichel74
+    - ACityThatSmog
+    - ugibdd74
+    - pchelanews
+    - camel74
+    - vecherchel
+    - chel_zoo
+    - minzdravstvuite
+    - chelmeria
+    - cheltvru
+  vk_groups:
+    - su_skrf
+    - spasatel74
+    - publibezopasnost112
+    - chelmchs
+    - achnov
+    - news31tv
+    - gufssp74
+    - public195984142
+    - chelproc
+  rss_feeds:
+    - https://dostup1.ru/rss

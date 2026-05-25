@@ -1,0 +1,166 @@
+2026-05-23 20:49:47,637 [INFO] Gemini: gemini-3.1-flash-lite-preview
+2026-05-23 20:49:47,637 [INFO] Загрузка модели эмбеддингов...
+2026-05-23 20:49:47,650 [INFO] No device provided, using cuda:0
+2026-05-23 20:49:48,366 [INFO] Loading SentenceTransformer model from cointegrated/rubert-tiny2.
+2026-05-23 20:49:54,327 [INFO] Профиль nch: бот 87939287…, интервал 48 мин
+2026-05-23 20:49:54,327 [INFO] [20:49:54] nch — начинаю проверку
+2026-05-23 20:50:03,371 [INFO] [nch] Новых: 122, в Gemini: 30
+2026-05-23 20:50:03,371 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-23 20:50:14,971 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-23 20:50:15,332 [INFO] [nch] Дайджест отправлен
+2026-05-23 20:50:15,333 [INFO] Профиль chp: бот 87226803…, интервал 55 мин
+2026-05-23 20:51:45,334 [INFO] Планировщик запущен. Ctrl+C для остановки.
+2026-05-25 02:02:31,602 [INFO] Gemini: gemini-3.1-flash-lite-preview
+2026-05-25 02:02:31,603 [INFO] Загрузка модели эмбеддингов...
+2026-05-25 02:02:31,694 [INFO] No device provided, using cuda:0
+2026-05-25 02:02:32,369 [INFO] Loading SentenceTransformer model from cointegrated/rubert-tiny2.
+2026-05-25 02:02:38,171 [INFO] Профиль nch: бот 87939287…, интервал 48 мин
+2026-05-25 02:02:38,171 [INFO] Профиль chp: бот 87226803…, интервал 55 мин
+2026-05-25 02:02:38,171 [INFO] Стартовый прогон обоих профилей…
+2026-05-25 02:02:38,171 [INFO] [02:02:38] nch — начинаю проверку
+2026-05-25 02:02:43,898 [INFO] [nch] Свежих записей (≤2 ч): 1
+2026-05-25 02:02:44,461 [INFO] [nch] Новых: 1, в Gemini: 1
+2026-05-25 02:02:44,463 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-25 02:02:45,821 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-25 02:02:46,142 [INFO] [nch] Дайджест отправлен
+2026-05-25 02:02:46,143 [INFO] Пауза 90 с перед профилем chp
+2026-05-25 02:04:16,144 [INFO] [02:04:16] chp — начинаю проверку
+2026-05-25 02:04:27,229 [INFO] [chp] Свежих записей (≤2 ч): 3
+2026-05-25 02:04:27,294 [INFO] [chp] Новых: 3, в Gemini: 3
+2026-05-25 02:04:27,294 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-25 02:04:29,518 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-25 02:04:29,623 [INFO] [chp] Дайджест отправлен
+2026-05-25 02:04:29,623 [INFO] Планировщик запущен. Ctrl+C для остановки.
+2026-05-25 02:50:38,379 [INFO] [02:50:38] nch — начинаю проверку
+2026-05-25 02:50:44,277 [INFO] [nch] Свежих записей (≤2 ч): 0
+2026-05-25 02:50:44,282 [INFO] [nch] Новых новостей нет
+2026-05-25 02:57:38,490 [INFO] [02:57:38] chp — начинаю проверку
+2026-05-25 02:57:49,456 [INFO] [chp] Свежих записей (≤2 ч): 2
+2026-05-25 02:57:49,459 [INFO] [chp] Новых новостей нет
+2026-05-25 03:38:39,155 [INFO] [03:38:39] nch — начинаю проверку
+2026-05-25 03:38:45,037 [INFO] [nch] Свежих записей (≤2 ч): 0
+2026-05-25 03:38:45,038 [INFO] [nch] Новых новостей нет
+2026-05-25 03:52:39,387 [INFO] [03:52:39] chp — начинаю проверку
+2026-05-25 03:52:50,302 [INFO] [chp] Свежих записей (≤2 ч): 1
+2026-05-25 03:52:50,304 [INFO] [chp] Новых новостей нет
+2026-05-25 04:26:39,916 [INFO] [04:26:39] nch — начинаю проверку
+2026-05-25 04:26:45,716 [INFO] [nch] Свежих записей (≤2 ч): 1
+2026-05-25 04:26:45,735 [INFO] [nch] Новых: 1, в Gemini: 1
+2026-05-25 04:26:45,735 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-25 04:26:47,103 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-25 04:26:47,444 [INFO] [nch] Дайджест отправлен
+2026-05-25 04:47:40,240 [INFO] [04:47:40] chp — начинаю проверку
+2026-05-25 04:47:50,912 [INFO] [chp] Свежих записей (≤2 ч): 1
+2026-05-25 04:47:50,945 [INFO] [chp] Новых: 1, в Gemini: 1
+2026-05-25 04:47:50,945 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-25 04:47:58,611 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-25 04:47:58,984 [INFO] [chp] Дайджест отправлен
+2026-05-25 05:14:40,659 [INFO] [05:14:40] nch — начинаю проверку
+2026-05-25 05:14:46,245 [INFO] [nch] Свежих записей (≤2 ч): 1
+2026-05-25 05:14:46,247 [INFO] [nch] Новых новостей нет
+2026-05-25 05:42:41,103 [INFO] [05:42:41] chp — начинаю проверку
+2026-05-25 05:42:51,643 [INFO] [chp] Свежих записей (≤2 ч): 1
+2026-05-25 05:42:51,648 [INFO] [chp] Новых новостей нет
+2026-05-25 06:02:41,430 [INFO] [06:02:41] nch — начинаю проверку
+2026-05-25 06:02:47,291 [INFO] [nch] Свежих записей (≤2 ч): 3
+2026-05-25 06:02:47,362 [INFO] [nch] Новых: 2, в Gemini: 2
+2026-05-25 06:02:47,362 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-25 06:03:01,112 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-25 06:03:01,540 [INFO] [nch] Дайджест отправлен
+2026-05-25 06:37:42,002 [INFO] [06:37:42] chp — начинаю проверку
+2026-05-25 06:37:52,837 [INFO] [chp] Свежих записей (≤2 ч): 3
+2026-05-25 06:37:52,872 [INFO] [chp] Новых: 2, в Gemini: 2
+2026-05-25 06:37:52,872 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-25 06:38:05,577 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-25 06:38:05,954 [INFO] [chp] Дайджест отправлен
+2026-05-25 06:50:42,209 [INFO] [06:50:42] nch — начинаю проверку
+2026-05-25 06:50:47,813 [INFO] [nch] Свежих записей (≤2 ч): 4
+2026-05-25 06:50:47,858 [INFO] [nch] Новых: 2, в Gemini: 2
+2026-05-25 06:50:47,859 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-25 06:50:49,807 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-25 06:50:50,123 [INFO] [nch] Дайджест отправлен
+2026-05-25 07:32:42,879 [INFO] [07:32:42] chp — начинаю проверку
+2026-05-25 07:32:53,684 [INFO] [chp] Свежих записей (≤2 ч): 11
+2026-05-25 07:32:53,818 [INFO] [chp] Новых: 8, в Gemini: 8
+2026-05-25 07:32:53,819 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-25 07:32:57,890 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-25 07:32:58,279 [INFO] [chp] Дайджест отправлен
+2026-05-25 07:38:42,975 [INFO] [07:38:42] nch — начинаю проверку
+2026-05-25 07:38:48,741 [INFO] [nch] Свежих записей (≤2 ч): 10
+2026-05-25 07:38:48,922 [INFO] [nch] Новых: 6, в Gemini: 6
+2026-05-25 07:38:48,922 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-25 07:38:50,884 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-25 07:38:51,226 [INFO] [nch] Дайджест отправлен
+2026-05-25 08:26:43,746 [INFO] [08:26:43] nch — начинаю проверку
+2026-05-25 08:26:49,701 [INFO] [nch] Свежих записей (≤2 ч): 14
+2026-05-25 08:26:49,823 [INFO] [nch] Новых: 5, в Gemini: 5
+2026-05-25 08:26:49,823 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-25 08:26:56,242 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-25 08:26:56,572 [INFO] [nch] Дайджест отправлен
+2026-05-25 08:27:43,764 [INFO] [08:27:43] chp — начинаю проверку
+2026-05-25 08:27:54,355 [INFO] [chp] Свежих записей (≤2 ч): 17
+2026-05-25 08:27:54,500 [INFO] [chp] Новых: 8, в Gemini: 8
+2026-05-25 08:27:54,500 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-25 08:27:57,533 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-25 08:27:57,947 [INFO] [chp] Дайджест отправлен
+2026-05-25 09:14:44,536 [INFO] [09:14:44] nch — начинаю проверку
+2026-05-25 09:14:50,314 [INFO] [nch] Свежих записей (≤2 ч): 15
+2026-05-25 09:14:50,444 [INFO] [nch] Новых: 7, в Gemini: 7
+2026-05-25 09:14:50,444 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-25 09:14:52,081 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-25 09:14:52,390 [INFO] [nch] Дайджест отправлен
+2026-05-25 09:22:44,677 [INFO] [09:22:44] chp — начинаю проверку
+2026-05-25 09:22:55,640 [INFO] [chp] Свежих записей (≤2 ч): 24
+2026-05-25 09:22:55,974 [INFO] [chp] Новых: 13, в Gemini: 13
+2026-05-25 09:22:55,974 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-25 09:23:19,795 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-25 09:23:20,138 [INFO] [chp] Дайджест отправлен
+2026-05-25 10:02:45,356 [INFO] [10:02:45] nch — начинаю проверку
+2026-05-25 10:02:51,286 [INFO] [nch] Свежих записей (≤2 ч): 20
+2026-05-25 10:02:51,621 [INFO] [nch] Новых: 8, в Gemini: 8
+2026-05-25 10:02:51,621 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-25 10:02:54,339 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-25 10:02:54,692 [INFO] [nch] Дайджест отправлен
+2026-05-25 10:17:45,630 [INFO] [10:17:45] chp — начинаю проверку
+2026-05-25 10:17:56,449 [INFO] [chp] Свежих записей (≤2 ч): 32
+2026-05-25 10:17:56,841 [INFO] [chp] Новых: 13, в Gemini: 13
+2026-05-25 10:17:56,842 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-25 10:18:02,675 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-25 10:18:02,993 [INFO] [chp] Дайджест отправлен
+2026-05-25 10:50:46,250 [INFO] [10:50:46] nch — начинаю проверку
+2026-05-25 10:50:51,955 [INFO] [nch] Свежих записей (≤2 ч): 29
+2026-05-25 10:50:52,348 [INFO] [nch] Новых: 17, в Gemini: 17
+2026-05-25 10:50:52,348 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-25 10:51:01,162 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-25 10:51:01,484 [INFO] [nch] Дайджест отправлен
+2026-05-25 11:12:45,685 [INFO] [11:12:45] chp — начинаю проверку
+2026-05-25 11:12:56,823 [INFO] [chp] Свежих записей (≤2 ч): 41
+2026-05-25 11:12:57,207 [INFO] [chp] Новых: 16, в Gemini: 16
+2026-05-25 11:12:57,207 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-25 11:13:05,892 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-25 11:13:06,208 [INFO] [chp] Дайджест отправлен
+2026-05-25 13:19:21,705 [INFO] Gemini: gemini-3.1-flash-lite-preview
+2026-05-25 13:19:21,706 [INFO] Загрузка модели эмбеддингов...
+2026-05-25 13:19:21,717 [INFO] No device provided, using cuda:0
+2026-05-25 13:19:22,513 [INFO] Loading SentenceTransformer model from cointegrated/rubert-tiny2.
+2026-05-25 13:28:25,928 [INFO] Gemini: gemini-3.1-flash-lite-preview
+2026-05-25 13:28:25,928 [INFO] Загрузка модели эмбеддингов...
+2026-05-25 13:28:25,942 [INFO] No device provided, using cuda:0
+2026-05-25 13:28:26,665 [INFO] Loading SentenceTransformer model from cointegrated/rubert-tiny2.
+2026-05-25 13:28:32,063 [INFO] Профиль nch: бот 87939287…, интервал 48 мин
+2026-05-25 13:28:32,063 [INFO] Профиль chp: бот 87226803…, интервал 55 мин
+2026-05-25 13:28:32,063 [INFO] Стартовый прогон обоих профилей…
+2026-05-25 13:28:32,064 [INFO] [13:28:32] nch — начинаю проверку
+2026-05-25 13:28:37,819 [INFO] [nch] Свежих записей (≤2 ч): 38
+2026-05-25 13:28:38,734 [INFO] [nch] Новых: 33, в Gemini: 24
+2026-05-25 13:28:38,734 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-25 13:28:44,561 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-25 13:28:44,976 [INFO] [nch] Дайджест отправлен
+2026-05-25 13:28:44,976 [INFO] Пауза 90 с перед профилем chp
+2026-05-25 13:30:14,976 [INFO] [13:30:14] chp — начинаю проверку
+2026-05-25 13:30:26,295 [INFO] [chp] Свежих записей (≤2 ч): 49
+2026-05-25 13:30:27,351 [INFO] [chp] Новых: 43, в Gemini: 30
+2026-05-25 13:30:27,351 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-25 13:30:38,898 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-25 13:30:39,086 [INFO] [chp] Дайджест отправлен
+2026-05-25 13:30:39,086 [INFO] Планировщик запущен. Ctrl+C для остановки.
