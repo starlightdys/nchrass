@@ -22,7 +22,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-VK_DOMAIN = "proverkadimas"
+VK_OWNER_ID = -87721351
 CHECK_INTERVAL = 60
 STATE_FILE = DATA_DIR / "rass_nch_state.json"
 
@@ -126,10 +126,10 @@ def get_gemini_summary(text: str) -> str:
     return "Интересные новости"
 
 
-def get_latest_posts(domain: str, count: int = 5) -> list:
+def get_latest_posts(owner_id: int, count: int = 5) -> list:
     url = "https://api.vk.com/method/wall.get"
     params = {
-        "domain": domain,
+        "owner_id": owner_id,
         "count": count,
         "access_token": vk_token,
         "v": "5.193",
@@ -138,7 +138,7 @@ def get_latest_posts(domain: str, count: int = 5) -> list:
         response = requests.get(url, params=params, timeout=15).json()
         return response.get("response", {}).get("items", [])
     except Exception as exc:
-        logger.warning("Ошибка ВК (%s): %s", domain, exc)
+        logger.warning("Ошибка ВК (owner_id=%s): %s", owner_id, exc)
         return []
 
 
@@ -255,16 +255,16 @@ def send_preview_to_telegram(
         pending_sends[send_id]["message_id"] = sent.message_id
         if list_entry:
             logger.info(
-                "[%s] Превью: %s → %s (%s)",
-                VK_DOMAIN,
+                "[owner_id=%s] Превью: %s → %s (%s)",
+                VK_OWNER_ID,
                 short_summary,
                 list_entry["label"],
                 list_entry["list_id"],
             )
         else:
             logger.info(
-                "[%s] Превью без рассылки (выбор вручную): %s",
-                VK_DOMAIN,
+                "[owner_id=%s] Превью без рассылки (выбор вручную): %s",
+                VK_OWNER_ID,
                 short_summary,
             )
     except Exception as exc:
@@ -524,28 +524,28 @@ def register_handlers():
 
 
 def establish_baseline() -> int:
-    posts = get_latest_posts(VK_DOMAIN)
+    posts = get_latest_posts(VK_OWNER_ID)
     if posts:
         last_id = max(post["id"] for post in posts)
         logger.info(
-            "[%s] Старт: последний post_id=%s, старые посты пропускаем",
-            VK_DOMAIN,
+            "[owner_id=%s] Старт: последний post_id=%s, старые посты пропускаем",
+            VK_OWNER_ID,
             last_id,
         )
     else:
         last_id = 0
-        logger.warning("[%s] Старт: постов не получено, id=0", VK_DOMAIN)
+        logger.warning("[owner_id=%s] Старт: постов не получено, id=0", VK_OWNER_ID)
 
-    save_state({VK_DOMAIN: last_id})
+    save_state({str(VK_OWNER_ID): last_id})
     return last_id
 
 
 def monitor_loop():
-    logger.info("Мониторинг VK: vk.com/%s", VK_DOMAIN)
+    logger.info("Мониторинг VK: owner_id=%s", VK_OWNER_ID)
     last_seen_id = establish_baseline()
 
     while True:
-        current_posts = get_latest_posts(VK_DOMAIN)
+        current_posts = get_latest_posts(VK_OWNER_ID)
         if current_posts:
             new_posts = [p for p in current_posts if p["id"] > last_seen_id]
             if new_posts:
@@ -554,8 +554,8 @@ def monitor_loop():
                     post_text = post.get("text", "")
                     if "erid" in post_text.lower():
                         logger.info(
-                            "[%s] Пропущен рекламный пост (id=%s)",
-                            VK_DOMAIN,
+                            "[owner_id=%s] Пропущен рекламный пост (id=%s)",
+                            VK_OWNER_ID,
                             post["id"],
                         )
                         continue
@@ -569,8 +569,8 @@ def monitor_loop():
                     media_url = get_media_url(post)
                     if not media_url:
                         logger.info(
-                            "[%s] Пропущен пост без фото (id=%s)",
-                            VK_DOMAIN,
+                            "[owner_id=%s] Пропущен пост без фото (id=%s)",
+                            VK_OWNER_ID,
                             post_id,
                         )
                         continue
@@ -580,7 +580,7 @@ def monitor_loop():
                     )
 
                 last_seen_id = max(post["id"] for post in current_posts)
-                save_state({VK_DOMAIN: last_seen_id})
+                save_state({str(VK_OWNER_ID): last_seen_id})
 
         time.sleep(CHECK_INTERVAL)
 
@@ -592,11 +592,11 @@ def main():
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     bot = telebot.TeleBot(env("TG_BOT_TOKEN_RASS_NCH"))
     gemini_client = genai.Client(api_key=env("GEMINI_API_KEY_RASS"))
-    vk_token = env("VK_TOKEN")
-    vk_community_token = env("VK_COMMUNITY_TOKEN")
+    vk_token = env("VK_TOKEN_NCH")
+    vk_community_token = env("VK_COMMUNITY_TOKEN_NCH")
     admin_chat_id = env("ADMIN_CHAT_ID")
-    broadcast_api_token = env("VK_BROADCAST_API_TOKEN")
-    broadcast_group_id = int(env("VK_BROADCAST_GROUP_ID"))
+    broadcast_api_token = env("VK_BROADCAST_API_TOKEN_NCH")
+    broadcast_group_id = int(env("VK_BROADCAST_GROUP_ID_NCH"))
 
     register_handlers()
     threading.Thread(target=monitor_loop, daemon=True).start()
@@ -604,9 +604,9 @@ def main():
         f"{e['label']} ({e['list_id']})" for e in BROADCAST_LISTS
     )
     logger.info(
-        "Rass-NCH: Gemini=%s, vk.com/%s, рассылки: %s. Ctrl+C — выход.",
+        "Rass-NCH: Gemini=%s, owner_id=%s, рассылки: %s. Ctrl+C — выход.",
         GEMINI_MODEL,
-        VK_DOMAIN,
+        VK_OWNER_ID,
         lists_info,
     )
     bot.infinity_polling()
