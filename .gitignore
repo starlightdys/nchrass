@@ -1,0 +1,9 @@
+.env
+*.sqlite
+data/
+news/
+news.txt
+__pycache__/
+*.pyc
+.venv/
+venv/
